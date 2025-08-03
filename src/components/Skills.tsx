@@ -16,30 +16,30 @@ const Skills = () => {
       icon: Code,
       title: 'Programming Languages',
       skills: [
-        { name: 'Python', level: 90, description: 'Primary language for AI/ML development' },
+        { name: 'Python', level: 85, description: 'Primary language for AI/ML development' },
         { name: 'C++', level: 75, description: 'System programming and competitive coding' },
-        { name: 'C', level: 70, description: 'Foundation programming and embedded systems' },
-        { name: 'Java', level: 65, description: 'Object-oriented programming and web development' },
+        { name: 'C', level: 75, description: 'Foundation programming and course study' },
+        { name: 'Java', level: 60, description: 'Object-oriented programming : course study' },
       ],
     },
     {
       icon: Brain,
       title: 'AI/ML & Data Science',
       skills: [
-        { name: 'TensorFlow', level: 85, description: 'Deep learning model development' },
-        { name: 'Scikit-learn', level: 80, description: 'Machine learning algorithms and preprocessing' },
-        { name: 'NLP', level: 88, description: 'Natural Language Processing and text analysis' },
-        { name: 'Computer Vision', level: 75, description: 'Image processing and CNN models' },
+        { name: 'TensorFlow', level: 90, description: 'Deep learning model development' },
+        { name: 'Scikit-learn', level: 90, description: 'Machine learning algorithms and preprocessing' },
+        { name: 'NLP', level: 80, description: 'Natural Language Processing and text analysis' },
+        { name: 'Computer Vision', level: 50, description: 'Image processing and CNN models' },
       ],
     },
     {
       icon: Globe,
       title: 'Web Development',
       skills: [
-        { name: 'FastAPI', level: 75, description: 'Learning API development with Python' },
-        { name: 'HTML/CSS', level: 70, description: 'Frontend development basics' },
-        { name: 'JavaScript', level: 60, description: 'Web programming fundamentals' },
-        { name: 'React', level: 55, description: 'Modern frontend framework' },
+        { name: 'FastAPI', level: 85, description: 'Learning API development with Python' },
+        { name: 'HTML/CSS', level: 60, description: 'Frontend development basics' },
+        { name: 'JavaScript', level: 50, description: 'Web programming fundamentals' },
+        { name: 'React', level: 30, description: 'Modern frontend framework' },
       ],
     },
     {
@@ -47,19 +47,19 @@ const Skills = () => {
       title: 'Database Basics',
       skills: [
         { name: 'SQL', level: 65, description: 'Basic database queries and design' },
-        { name: 'Database Concepts', level: 60, description: 'Understanding data relationships' },
+        { name: 'Database Concepts', level: 70, description: 'Understanding data relationships' },
         { name: 'Data Management', level: 55, description: 'Organizing and storing data' },
-        { name: 'Data Analysis', level: 70, description: 'Working with datasets for ML' },
+        { name: 'Data Analysis', level: 90, description: 'Working with datasets for ML' },
       ],
     },
     {
       icon: Wrench,
       title: 'Tools & Technologies',
       skills: [
-        { name: 'Git', level: 85, description: 'Version control and collaboration' },
-        { name: 'Docker', level: 75, description: 'Containerization and deployment' },
-        { name: 'VS Code', level: 85, description: 'Development environment and extensions' },
-        { name: 'Jupyter', level: 90, description: 'Data analysis and prototyping' },
+        { name: 'Git', level: 80, description: 'Version control and collaboration' },
+        { name: 'Docker', level: 60, description: 'Containerization and deployment' },
+        { name: 'pycharm', level: 80, description: 'Development environment and extensions' },
+        { name: 'notebook', level: 95, description: 'major platform for ML works ' },
       ],
     },
     {
@@ -142,10 +142,10 @@ const Skills = () => {
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                'PyTorch', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'OpenCV',
-                'NLTK', 'spaCy', 'Transformers', 'Hugging Face', 'Streamlit',
-                'Plotly', 'Keras', 'XGBoost', 'MLflow', 'Apache Spark',
-                'Redis', 'Elasticsearch', 'AWS', 'Google Cloud', 'Heroku'
+                 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'OpenCV',
+                'NLTK', 'spaCy', 'Transformers', 'Hugging Face','RNN', 'CNN', 'Streamlit',
+                'Plotly', 'Keras', 'XGBoost', 'MLflow',
+               , 'Azure', 'Cloud'
               ].map((tech, index) => (
                 <Badge 
                   key={index} 
@@ -169,7 +169,7 @@ const Skills = () => {
                 advanced topics in Large Language Models, Computer Vision, and MLOps practices.
               </p>
               <div className="flex flex-wrap justify-center gap-2">
-                {['LLMs', 'Generative AI', 'MLOps', 'Kubernetes', 'Reinforcement Learning'].map((topic, index) => (
+                {['LLMs', 'Generative AI', 'MLOps'].map((topic, index) => (
                   <Badge 
                     key={index} 
                     className="bg-primary/20 text-primary"

@@ -9,13 +9,18 @@ import neuralSummarizerImage from '@/assets/neural-summarizer-project.jpg';
 const Projects = () => {
   const projects = [
     {
-      title: 'CareerR',
-      description: 'An end-to-end AI-powered career recommendation platform built as my final year college project. Users can upload their resumes to receive personalized career recommendations, detailed skill gap analysis, and curated course suggestions. The platform leverages advanced NLP techniques to analyze resume content and match it with industry requirements.',
+      title: 'CareerR – AI Career recommendation system',
+      description: `CareerR is our Final Year Project — a demo MVP of an AI-powered career recommendation platform. It allows users to upload their resume or provide manual input. The system then analyzes their skills, identifies gaps, and recommends personalized career paths and relevant Coursera courses.
+
+    The project is built using FastAPI and trained with publicly available and synthetic datasets . It integrates resume parsing, job-role matching, skill gap analysis, and course recommendations into a single modular system.`,
       image: careerRImage,
-      technologies: ['FastAPI', 'Python', 'NLP', 'Microservices', 'Machine Learning', 'Docker'],
-      githubUrl: '#',
-      liveUrl: '#',
-      featured: true,
+      technologies: [
+        'Python', 'FastAPI', 'NLP', 'TF-IDF', 'spaCy', 'PyMuPDF',
+        'scikit-learn', 'Pandas', 'Docker', 'fuzzywuzzy'
+      ],
+      githubUrl: 'https://github.com/Ashok053/career_Recomendation_system', // replace with your actual repo
+      liveUrl: 'https://career-recommendation-platform.vercel.app/',
+      featured: true
     },
     {
       title: 'Potato Disease Classifier',

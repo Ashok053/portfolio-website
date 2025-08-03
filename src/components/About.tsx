@@ -1,121 +1,109 @@
 import { Brain, Code, Database, Globe } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
+const highlights = [
+  {
+    icon: Brain,
+    title: 'AI/ML Expertise',
+    description:
+      'learning NLP, transformer architecture and deep learning domain',
+  },
+  {
+    icon: Code,
+    title: 'AI Development',
+    description:
+      'Building intelligent systems using Python and ML frameworks.',
+  },
+  {
+    icon: Database,
+    title: 'Data Science',
+    description:
+      'Strong foundation in data analysis, feature engineering, and machine learning model development.',
+  },
+  {
+    icon: Globe,
+    title: 'Problem Solver',
+    description:
+      'Applying tech to solve real-world problems that matter.',
+  },
+];
+
 const About = () => {
-  const highlights = [
-    {
-      icon: Brain,
-      title: 'AI/ML Expertise',
-      description: 'Specialized in NLP, Transformers, and Deep Learning with hands-on experience in real-world applications.',
-    },
-    {
-      icon: Code,
-      title: 'AI Development',
-      description: 'Focused on building AI solutions with machine learning models and deep learning frameworks.',
-    },
-    {
-      icon: Database,
-      title: 'Data Science',
-      description: 'Strong foundation in data analysis, feature engineering, and machine learning model development.',
-    },
-    {
-      icon: Globe,
-      title: 'Problem Solver',
-      description: 'Passionate about leveraging technology to solve real human problems and create meaningful impact.',
-    },
-  ];
-
   return (
-    <section id="about" className="section-padding bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              About Me
-            </h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              A dedicated AI/ML enthusiast and learner from Nepal, currently pursuing BSc CSIT with a deep passion for 
-              natural language processing, transformers, and deep learning technologies.
-            </p>
+    <section id="about" className="py-24 bg-background">
+      <div className="container mx-auto px-4 max-w-6xl">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
+            About Me
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            Final-year CSIT student from Nepal passionate about accessible AI. I love building solutions with deep learning and NLP that have a real-world impact.
+          </p>
+        </div>
+
+        {/* Highlights + Description */}
+        <div className="grid lg:grid-cols-2 gap-12 mb-16">
+          {/* Highlights */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 self-start">
+            {highlights.map((highlight, index) => (
+              <Card
+                key={index}
+                className="border-border/50 hover:border-primary/30 transition duration-300"
+              >
+                <CardContent className="p-6 text-center">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-4">
+                    <highlight.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-1">
+                    {highlight.title}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {highlight.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
 
-          {/* Main Content */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            {/* Text Content */}
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-2xl font-semibold text-foreground mb-4">
-                  Passionate AI Enthusiast & Learner
-                </h3>
-                <div className="space-y-4 text-muted-foreground">
-                  <p>
-                    As a final year BSc CSIT student from Nepal, I have developed a deep fascination 
-                    with artificial intelligence and its potential to transform how we solve complex problems. 
-                    My journey in AI/ML began with a curiosity about how machines can understand and 
-                    process human language.
-                  </p>
-                  <p>
-                    I specialize in <span className="text-primary font-medium">Natural Language Processing (NLP)</span>, 
-                    <span className="text-primary font-medium"> Transformer architectures</span>, and 
-                    <span className="text-primary font-medium"> Deep Learning</span>. My focus is on building 
-                    practical AI applications that address real-world challenges, from career guidance systems 
-                    to agricultural disease detection.
-                  </p>
-                  <p>
-                    What drives me is the opportunity to create technology that genuinely helps people. 
-                    Whether it's helping students find the right career path or assisting farmers in 
-                    detecting crop diseases, I believe AI should be accessible and beneficial to everyone.
-                  </p>
-                </div>
-              </div>
-
-              {/* Personal Touch */}
-              <div className="bg-accent/50 p-6 rounded-lg">
-                <h4 className="font-semibold text-foreground mb-2">Beyond Code</h4>
-                <p className="text-muted-foreground">
-                  When I'm not coding, I enjoy exploring the latest research papers and learning about 
-                  new developments in AI/ML. I'm always excited to collaborate on innovative projects 
-                  and connect with fellow enthusiasts in the tech community.
-                </p>
-              </div>
+          {/* Short Narrative */}
+          <div className="flex flex-col justify-start space-y-6 text-muted-foreground text-base">
+            <div>
+              <h3 className="text-2xl font-semibold text-foreground mb-3">
+                Why AI?
+              </h3>
+              <p>
+                It started with curiosity about how instagram recommend similar reels and google assitant understand language. Now I explore advance models, learn with purposes and aim to solve everyday problems using ML.
+              </p>
             </div>
-
-            {/* Highlights Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {highlights.map((highlight, index) => (
-                <Card key={index} className="card-shadow border-border/50 hover:border-primary/20">
-                  <CardContent className="p-6 text-center">
-                    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg mb-4">
-                      <highlight.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <h4 className="font-semibold text-foreground mb-2">{highlight.title}</h4>
-                    <p className="text-sm text-muted-foreground">{highlight.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
+            <div>
+              <h3 className="text-2xl font-semibold text-foreground mb-3">
+                Beyond Code
+              </h3>
+              <p>
+                I enjoy teaching, building with others, and contributing to tech that helps people — whether it’s students, farmers, or anyone in between.
+              </p>
             </div>
           </div>
+        </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">3+</div>
-              <div className="text-muted-foreground">Years Exploring Tech</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">5+</div>
-              <div className="text-muted-foreground">AI Projects</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">10+</div>
-              <div className="text-muted-foreground">Certifications</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">1</div>
-              <div className="text-muted-foreground">Community Led with Mission</div>
-            </div>
+        {/* Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div className="text-3xl font-bold text-primary mb-2">3+</div>
+            <div className="text-muted-foreground">Years Exploring Tech</div>
+          </div>
+          <div>
+            <div className="text-3xl font-bold text-primary mb-2">4+</div>
+            <div className="text-muted-foreground">Projects</div>
+          </div>
+          <div>
+            <div className="text-3xl font-bold text-primary mb-2">10+</div>
+            <div className="text-muted-foreground">Certifications</div>
+          </div>
+          <div>
+            <div className="text-3xl font-bold text-primary mb-2">1</div>
+            <div className="text-muted-foreground">Community Led with Mission</div>
           </div>
         </div>
       </div>

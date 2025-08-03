@@ -8,46 +8,43 @@ const Experience = () => {
       title: 'Project Lead',
       organization: 'Code for Change Chitwan',
       type: 'Leadership Role',
-      duration: '2022 - Present',
+      duration: '2024 december - Present',
       location: 'Chitwan, Nepal',
       description: 'Leading a student-driven tech community that spans across multiple colleges in Chitwan. Focused on fostering collaboration, knowledge sharing, and innovative project development among computer science students.',
       responsibilities: [
-        'Organize workshops and coding bootcamps for 100+ students across multiple colleges',
-        'Coordinate collaborative projects between different institutions',
+        'Organize workshops, hackathon, events and coding bootcamps for 100+ students across multiple colleges',
         'Mentor junior students in programming and project development',
         'Build partnerships with local tech companies and startups',
-        'Organize hackathons and coding competitions',
-        'Create learning resources and curriculum for community members'
       ],
       achievements: [
-        'Built a community of 150+ active members across 5 colleges',
-        'Successfully organized 12 technical workshops and events',
-        'Facilitated 8 collaborative inter-college projects',
-        'Established mentorship programs connecting seniors with juniors'
+        'Built a community of 500+ active learners across city',
+        'Successfully organized 15+ technical workshops and events',
+        'Established mentorship programs connecting seniors with juniors',
+        'Work in collaboration with Bharatpur mahanagar and different INGOs to empower youth in technology'
       ],
-      skills: ['Leadership', 'Community Building', 'Event Management', 'Mentoring', 'Project Coordination'],
+      skills: ['Leadership', 'Community Building', 'Event Management','communication', 'Mentoring', 'Project Coordination'],
       icon: Users,
     }
   ];
 
   const additionalExperience = [
     {
-      title: 'Open Source Contributor',
-      description: 'Active contributor to various open-source AI/ML projects and documentation',
-      period: '2021 - Present',
+      title: 'Microsoft student Ambassador: beta',
+      description: 'Beta MSA, participated in multiple events, townhall call and recently organized and mentored an Azure fundamentals workshop with 50+ participants.',
+      period: '2024 - Present',
+      type: 'Leadership',
+    },
+    {
+      title: 'nepal Cloud Professional volunteer',
+      description: 'volunteer with Nepal Cloud Professionals, a community shaping the future of cloud computing in Nepal.',
+      period: '2024 dec  - Present',
       type: 'Volunteer',
     },
     {
-      title: 'Technical Blog Writer',
-      description: 'Writing technical articles on Medium and GitHub about AI/ML concepts and tutorials',
-      period: '2022 - Present',
-      type: 'Content Creation',
-    },
-    {
-      title: 'Study Group Coordinator',
-      description: 'Organized weekly study sessions for advanced computer science topics',
-      period: '2021 - 2023',
-      type: 'Academic',
+      title: 'School Teacher',
+      description: 'work as a full time volunteer teacher for a year at school with marginalized chepang students majority: teaches math, computer and science and also look after school IT system',
+      period: '2023 - 2024',
+      type: 'Volunteer teacher',
     },
   ];
 

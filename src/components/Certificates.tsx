@@ -1,11 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { 
-  Award, 
-  BookOpen, 
-  ExternalLink, 
-  PenTool, 
+import {
+  Award,
+  BookOpen,
+  ExternalLink,
+  PenTool,
   Calendar,
   Users,
   TrendingUp
@@ -14,67 +14,31 @@ import {
 const Certificates = () => {
   const certificates = [
     {
-      title: 'Deep Learning Specialization',
+      title: 'Machine learning Specialization',
       issuer: 'DeepLearning.AI (Coursera)',
-      date: '2023',
-      description: 'Comprehensive 5-course specialization covering neural networks, CNNs, RNNs, and sequence models.',
-      skills: ['Neural Networks', 'CNN', 'RNN', 'TensorFlow', 'Deep Learning'],
-      credentialId: 'DL2023-ALS-001',
+      date: '2024 feb',
+      description: 'Comprehensive 3-course specialization covering supervised, unsupervised, advance learning algorithms recommenders, reinforcement learning  .',
+      skills: ['Ai/ML', 'Scikit learn', 'Data ethics','Regression analysis', 'anamoly detection', 'CART', 'Decision Tree'],
+      credentialId: '22K5GN5PT2WZ',
       category: 'AI/ML',
     },
     {
-      title: 'FastAPI Complete Course',
-      issuer: 'Udemy',
-      date: '2023',
-      description: 'Advanced FastAPI development including async programming, testing, and microservices architecture.',
-      skills: ['FastAPI', 'Python', 'API Development', 'Microservices', 'Testing'],
-      credentialId: 'FAPI2023-ALS-002',
-      category: 'Web Development',
-    },
-    {
-      title: 'Machine Learning A-Z',
-      issuer: 'Udemy',
-      date: '2022',
-      description: 'Hands-on machine learning course covering regression, classification, clustering, and more.',
-      skills: ['Machine Learning', 'Python', 'Scikit-learn', 'Data Analysis'],
-      credentialId: 'ML2022-ALS-003',
-      category: 'AI/ML',
-    },
-    {
-      title: 'Natural Language Processing Specialization',
-      issuer: 'DeepLearning.AI (Coursera)',
-      date: '2023',
-      description: 'Advanced NLP techniques including sentiment analysis, machine translation, and attention models.',
-      skills: ['NLP', 'Transformers', 'BERT', 'Text Processing', 'Attention Mechanisms'],
-      credentialId: 'NLP2023-ALS-004',
-      category: 'AI/ML',
-    },
-    {
-      title: 'Docker & Kubernetes Complete Guide',
-      issuer: 'Udemy',
-      date: '2023',
-      description: 'Containerization and orchestration for modern application deployment.',
-      skills: ['Docker', 'Kubernetes', 'DevOps', 'Container Orchestration'],
-      credentialId: 'DK2023-ALS-005',
-      category: 'DevOps',
-    },
-    {
-      title: 'Git & GitHub Masterclass',
-      issuer: 'Udemy',
-      date: '2022',
-      description: 'Advanced version control, collaboration, and open source contribution workflows.',
-      skills: ['Git', 'GitHub', 'Version Control', 'Open Source'],
-      credentialId: 'GIT2022-ALS-006',
-      category: 'Development Tools',
-    },
+      title: 'Associate Data Scientist Course',
+      issuer: 'DataCamp',
+      date: '2024',
+      description: '90 hour course covering intermediate python, data visualization, manipulation, EDA, analysis,time series, regression and stat models, stastics, predictive modeling',
+      skills: ['EDA', 'Visualization', 'math', 'stat', 'ML models, feature engineering'],
+      credentialId: 'd534469781333ca4bc5b6eb0eb53334a1c6ba9fa',
+      category: 'data science',
+    }
   ];
 
   const blogs = [
     {
-      title: 'Understanding Transformer Architecture in NLP',
+      title: 'Understanding Transformer Architecture from basics',
       platform: 'Medium',
-      date: '2023',
-      views: '1.2K',
+      date: '2025',
+      views: '177',
       description: 'A deep dive into the attention mechanism and how transformers revolutionized natural language processing.',
       tags: ['NLP', 'Transformers', 'Deep Learning', 'AI'],
       url: '#',
@@ -82,30 +46,21 @@ const Certificates = () => {
     {
       title: 'Building Your First FastAPI Application',
       platform: 'GitHub Discussions',
-      date: '2023',
-      views: '890',
+      date: '2025',
+      views: '120',
       description: 'Step-by-step guide to creating a production-ready API with FastAPI, including best practices.',
       tags: ['FastAPI', 'Python', 'API', 'Tutorial'],
       url: '#',
     },
     {
-      title: 'Career Path in AI/ML: A Beginner\'s Guide',
+      title: "Career Path in AI/ML: A Beginner's Guide",
       platform: 'Medium',
-      date: '2023',
-      views: '2.1K',
+      date: '2025',
+      views: '260',
       description: 'Comprehensive guide for students starting their journey in artificial intelligence and machine learning.',
       tags: ['Career', 'AI/ML', 'Guide', 'Beginner'],
       url: '#',
-    },
-    {
-      title: 'Computer Vision for Agriculture: Disease Detection',
-      platform: 'GitHub Discussions',
-      date: '2023',
-      views: '756',
-      description: 'How deep learning can help farmers identify crop diseases using computer vision techniques.',
-      tags: ['Computer Vision', 'Agriculture', 'CNN', 'Real-world AI'],
-      url: '#',
-    },
+    }
   ];
 
   const getCategoryColor = (category: string) => {
@@ -129,7 +84,7 @@ const Certificates = () => {
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Continuous learning through certified courses and sharing knowledge through 
+              Continuous learning through certified courses and sharing own perspective of learning and knowledge through
               technical writing on various AI/ML topics.
             </p>
           </div>
@@ -161,26 +116,26 @@ const Certificates = () => {
                             {cert.date}
                           </div>
                         </div>
-                        <Badge 
-                          variant="outline" 
+                        <Badge
+                          variant="outline"
                           className={getCategoryColor(cert.category)}
                         >
                           {cert.category}
                         </Badge>
                       </div>
                     </CardHeader>
-                    
+
                     <CardContent className="space-y-4">
                       <p className="text-muted-foreground text-sm">
                         {cert.description}
                       </p>
-                      
+
                       <div>
                         <h5 className="font-medium text-foreground mb-2">Skills Covered:</h5>
                         <div className="flex flex-wrap gap-2">
                           {cert.skills.map((skill, skillIndex) => (
-                            <Badge 
-                              key={skillIndex} 
+                            <Badge
+                              key={skillIndex}
                               variant="secondary"
                               className="text-xs bg-primary/10 text-primary"
                             >
@@ -189,10 +144,10 @@ const Certificates = () => {
                           ))}
                         </div>
                       </div>
-                      
+
                       <div className="pt-2">
-                        <Button 
-                          variant="outline" 
+                        <Button
+                          variant="outline"
                           size="sm"
                           className="border-primary/20 text-primary hover:bg-primary/10"
                         >
@@ -243,17 +198,17 @@ const Certificates = () => {
                         </div>
                       </div>
                     </CardHeader>
-                    
+
                     <CardContent className="space-y-4">
                       <p className="text-muted-foreground text-sm">
                         {blog.description}
                       </p>
-                      
+
                       <div>
                         <div className="flex flex-wrap gap-2">
                           {blog.tags.map((tag, tagIndex) => (
-                            <Badge 
-                              key={tagIndex} 
+                            <Badge
+                              key={tagIndex}
                               variant="secondary"
                               className="text-xs bg-accent/50 text-accent-foreground"
                             >
@@ -262,10 +217,10 @@ const Certificates = () => {
                           ))}
                         </div>
                       </div>
-                      
+
                       <div className="pt-2">
-                        <Button 
-                          variant="outline" 
+                        <Button
+                          variant="outline"
                           size="sm"
                           className="border-primary/20 text-primary hover:bg-primary/10"
                         >
@@ -276,59 +231,6 @@ const Certificates = () => {
                     </CardContent>
                   </Card>
                 ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Writing Stats & CTA */}
-          <div className="mt-16">
-            <div className="bg-accent/30 p-8 rounded-xl border border-border/50">
-              <div className="text-center mb-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">
-                  Future Writing Plans
-                </h3>
-                <p className="text-muted-foreground">
-                  Planning to share insights about ML, NLP, and AI learning journey through blogs and 
-                  community discussions. Stay tuned for future content!
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-6">
-                <div>
-                  <div className="text-2xl font-bold text-primary mb-1">15+</div>
-                  <div className="text-sm text-muted-foreground">Articles Published</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-primary mb-1">5K+</div>
-                  <div className="text-sm text-muted-foreground">Total Views</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-primary mb-1">200+</div>
-                  <div className="text-sm text-muted-foreground">Followers</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-primary mb-1">50+</div>
-                  <div className="text-sm text-muted-foreground">Comments & Discussions</div>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="flex flex-wrap justify-center gap-4">
-                  <Button 
-                    variant="default"
-                    className="bg-primary hover:bg-primary/90"
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Follow on Medium
-                  </Button>
-                  <Button 
-                    variant="outline"
-                    className="border-primary/20 text-primary hover:bg-primary/10"
-                  >
-                    <Users className="mr-2 h-4 w-4" />
-                    GitHub Discussions
-                  </Button>
-                </div>
               </div>
             </div>
           </div>
