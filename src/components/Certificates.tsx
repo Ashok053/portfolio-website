@@ -285,11 +285,11 @@ const Certificates = () => {
             <div className="bg-accent/30 p-8 rounded-xl border border-border/50">
               <div className="text-center mb-6">
                 <h3 className="text-xl font-semibold text-foreground mb-4">
-                  Actively Writing About AI/ML & Career Development
+                  Future Writing Plans
                 </h3>
                 <p className="text-muted-foreground">
-                  I regularly publish articles on Medium and GitHub Discussions, sharing insights about 
-                  machine learning, NLP, career tips, and practical AI applications.
+                  Planning to share insights about ML, NLP, and AI learning journey through blogs and 
+                  community discussions. Stay tuned for future content!
                 </p>
               </div>
               

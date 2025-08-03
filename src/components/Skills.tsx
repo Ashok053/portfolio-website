@@ -34,22 +34,22 @@ const Skills = () => {
     },
     {
       icon: Globe,
-      title: 'Web Development & APIs',
+      title: 'Web Development',
       skills: [
-        { name: 'FastAPI', level: 85, description: 'Building high-performance APIs' },
-        { name: 'RESTful APIs', level: 80, description: 'API design and development' },
-        { name: 'Microservices', level: 70, description: 'Distributed system architecture' },
-        { name: 'Web Frameworks', level: 65, description: 'Full-stack web development' },
+        { name: 'FastAPI', level: 75, description: 'Learning API development with Python' },
+        { name: 'HTML/CSS', level: 70, description: 'Frontend development basics' },
+        { name: 'JavaScript', level: 60, description: 'Web programming fundamentals' },
+        { name: 'React', level: 55, description: 'Modern frontend framework' },
       ],
     },
     {
       icon: Database,
-      title: 'Databases & Storage',
+      title: 'Database Basics',
       skills: [
-        { name: 'SQL', level: 80, description: 'Database design and complex queries' },
-        { name: 'MySQL', level: 75, description: 'Relational database management' },
-        { name: 'PostgreSQL', level: 70, description: 'Advanced database features' },
-        { name: 'NoSQL', level: 60, description: 'Document and graph databases' },
+        { name: 'SQL', level: 65, description: 'Basic database queries and design' },
+        { name: 'Database Concepts', level: 60, description: 'Understanding data relationships' },
+        { name: 'Data Management', level: 55, description: 'Organizing and storing data' },
+        { name: 'Data Analysis', level: 70, description: 'Working with datasets for ML' },
       ],
     },
     {
@@ -58,7 +58,7 @@ const Skills = () => {
       skills: [
         { name: 'Git', level: 85, description: 'Version control and collaboration' },
         { name: 'Docker', level: 75, description: 'Containerization and deployment' },
-        { name: 'Linux', level: 80, description: 'System administration and scripting' },
+        { name: 'VS Code', level: 85, description: 'Development environment and extensions' },
         { name: 'Jupyter', level: 90, description: 'Data analysis and prototyping' },
       ],
     },

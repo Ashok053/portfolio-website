@@ -10,8 +10,8 @@ const About = () => {
     },
     {
       icon: Code,
-      title: 'Full-Stack Development',
-      description: 'Proficient in building end-to-end AI solutions using FastAPI, microservices, and modern web technologies.',
+      title: 'AI Development',
+      description: 'Focused on building AI solutions with machine learning models and deep learning frameworks.',
     },
     {
       icon: Database,
@@ -36,7 +36,7 @@ const About = () => {
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              A dedicated AI/ML developer from Nepal, currently pursuing BSc CSIT with a deep passion for 
+              A dedicated AI/ML enthusiast and learner from Nepal, currently pursuing BSc CSIT with a deep passion for 
               natural language processing, transformers, and deep learning technologies.
             </p>
           </div>
@@ -47,7 +47,7 @@ const About = () => {
             <div className="space-y-6">
               <div>
                 <h3 className="text-2xl font-semibold text-foreground mb-4">
-                  Passionate AI Researcher & Developer
+                  Passionate AI Enthusiast & Learner
                 </h3>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
@@ -75,9 +75,9 @@ const About = () => {
               <div className="bg-accent/50 p-6 rounded-lg">
                 <h4 className="font-semibold text-foreground mb-2">Beyond Code</h4>
                 <p className="text-muted-foreground">
-                  When I'm not coding, I enjoy exploring the latest research papers, contributing to 
-                  open-source projects, and sharing my knowledge through blog posts and community 
-                  discussions. I'm always excited to collaborate on innovative AI projects.
+                  When I'm not coding, I enjoy exploring the latest research papers and learning about 
+                  new developments in AI/ML. I'm always excited to collaborate on innovative projects 
+                  and connect with fellow enthusiasts in the tech community.
                 </p>
               </div>
             </div>
@@ -102,7 +102,7 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-primary mb-2">3+</div>
-              <div className="text-muted-foreground">Years Coding</div>
+              <div className="text-muted-foreground">Years Exploring Tech</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">5+</div>
@@ -114,7 +114,7 @@ const About = () => {
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">1</div>
-              <div className="text-muted-foreground">Community Lead</div>
+              <div className="text-muted-foreground">Community Led with Mission</div>
             </div>
           </div>
         </div>

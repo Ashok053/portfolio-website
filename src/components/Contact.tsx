@@ -107,7 +107,7 @@ const Contact = () => {
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               I'm always excited to discuss AI/ML projects, collaboration opportunities, or 
-              simply chat about the latest developments in artificial intelligence.
+              simply chat about the latest developments in artificial intelligence. Currently looking for collaboration opportunities!
             </p>
           </div>
 

@@ -31,7 +31,7 @@ const Hero = () => {
             </h1>
             <div className="text-xl md:text-2xl text-white/90 mb-6">
               <span className="typing-animation overflow-hidden whitespace-nowrap inline-block">
-                AI/ML Developer & Researcher from Nepal
+                AI/ML Enthusiast & Learner from Nepal
               </span>
             </div>
           </div>
