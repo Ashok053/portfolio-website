@@ -1,26 +1,16 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import path from 'path';
 
-// Removed lovable-tagger since it's unnecessary
-// import { componentTagger } from "lovable-tagger";
-
-export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-  },
-  plugins: [
-    react(),
-    // mode === 'development' && componentTagger(), // <- removed
-  ].filter(Boolean),
+export default defineConfig({
+  base: '/', // <-- your repo name here, with trailing slash
+  plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      '@': path.resolve(__dirname, './src'),
     },
   },
   build: {
-    outDir: "dist", // 👈 This sets the output directory (default is "dist")
-    emptyOutDir: true, // Optional: cleans the folder before building
+    outDir: 'dist',
   },
-}));
+});
