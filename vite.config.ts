@@ -3,7 +3,9 @@ import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 
 export default defineConfig({
-  base: 'homepage": "https://ashok053.github.io/portfolio-website',
+  base: '/portfolio-website/',
+  "homepage": "https://ashok053.github.io/portfolio-website",
+
   plugins: [react()],
   resolve: {
     alias: {
