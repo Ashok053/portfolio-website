@@ -18,7 +18,7 @@ const Projects = () => {
         'Python', 'FastAPI', 'NLP', 'TF-IDF', 'spaCy', 'PyMuPDF',
         'scikit-learn', 'Pandas', 'Docker', 'fuzzywuzzy'
       ],
-      githubUrl: 'https://github.com/Ashok053/career_Recomendation_system', // replace with your actual repo
+      githubUrl: 'https://github.com/Ashok053/career_Recomendation_system',
       liveUrl: 'https://career-recommendation-platform.vercel.app/',
       featured: true
     },
@@ -27,7 +27,7 @@ const Projects = () => {
       description: 'A deep learning-based image classification system that identifies and classifies potato plant diseases with high accuracy. Built using Convolutional Neural Networks (CNN) and trained on the comprehensive PlantVillage dataset. This tool helps farmers quickly identify plant health issues for better crop management.',
       image: potatoClassifierImage,
       technologies: ['TensorFlow', 'CNN', 'Python', 'Computer Vision', 'PlantVillage Dataset'],
-      githubUrl: '#',
+      githubUrl: 'https://github.com/Ashok053/potato-disease-classifier',
       liveUrl: '#',
       featured: false,
     },
@@ -115,23 +115,39 @@ const Projects = () => {
 
                       {/* Action Buttons */}
                       <div className="flex gap-4 pt-4">
-                        <Button 
-                          variant="default" 
-                          size="sm"
-                          className="bg-primary hover:bg-primary/90"
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
-                          <Github className="mr-2 h-4 w-4" />
-                          View Code
-                        </Button>
-                        <Button 
-                          variant="outline" 
-                          size="sm"
-                          className="border-primary/20 text-primary hover:bg-primary/10"
-                        >
-                          <ExternalLink className="mr-2 h-4 w-4" />
-                          Live Demo
-                        </Button>
+                          <Button
+                            variant="default"
+                            size="sm"
+                            className="bg-primary hover:bg-primary/90"
+                          >
+                            <Github className="mr-2 h-4 w-4" />
+                            View Code
+                          </Button>
+                        </a>
+
+                        {project.liveUrl !== '#' && (
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="border-primary/20 text-primary hover:bg-primary/10"
+                            >
+                              <ExternalLink className="mr-2 h-4 w-4" />
+                              Live Demo
+                            </Button>
+                          </a>
+                        )}
                       </div>
+
                     </CardContent>
                   </div>
                 </div>
@@ -144,14 +160,21 @@ const Projects = () => {
             <p className="text-muted-foreground mb-6">
               Want to see more of my work? Check out my GitHub for additional projects and contributions.
             </p>
-            <Button 
-              variant="default" 
-              size="lg"
-              className="bg-primary hover:bg-primary/90"
+            <a
+              href="https://github.com/Ashok053"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Github className="mr-2 h-5 w-5" />
-              View All Projects on GitHub
-            </Button>
+              <Button
+                variant="default"
+                size="lg"
+                className="bg-primary hover:bg-primary/90"
+              >
+                <Github className="mr-2 h-5 w-5" />
+                View All Projects on GitHub
+              </Button>
+            </a>
+
           </div>
         </div>
       </div>
